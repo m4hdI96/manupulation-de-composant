@@ -1,0 +1,14 @@
+<fieldset *ngFor="let item of listeArticle index as i ">
+
+    <legend>{{item.titre}} </legend>
+    <p> Auteur : {{item.auteur}}</p>
+
+    <p>Date : {{item.date}}</p>
+    <p>Contenu : {{item.contenu}}</p>
+
+
+    <p style="color: red;"> Categorie : {{item.categorie}} </p>
+
+</fieldset>
+
+<h2>le nombre total des articles est : {{listeArticle.length}}</h2>
